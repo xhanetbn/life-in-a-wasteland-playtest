@@ -1,22 +1,22 @@
 {
-  "version": "0.7.3",
-  "increment": "I1",
-  "title": "First shared stockpile",
+  "version": "0.7.4",
+  "increment": "I2",
+  "title": "A home worth keeping",
   "status": "Playable preview",
   "engine": "d43cb6dbd8e8ecd4",
-  "game": "f0b0de6e46cbdc56",
+  "game": "479f461745e979d1",
   "files": {
     "index.js": "assets/engine-d43cb6dbd8e8ecd4.js",
     "index.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm",
     "index.audio.position.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.position.worklet.js",
     "index.audio.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.worklet.js",
-    "index.pck": "assets/game-f0b0de6e46cbdc56.pck"
+    "index.pck": "assets/game-479f461745e979d1.pck"
   },
   "packedFiles": {
     "assets/engine-d43cb6dbd8e8ecd4.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm.gz",
-    "assets/game-f0b0de6e46cbdc56.pck": "assets/game-f0b0de6e46cbdc56.pck.gz"
+    "assets/game-479f461745e979d1.pck": "assets/game-479f461745e979d1.pck.gz"
   },
-  "raw_bytes": 56594288,
-  "brotli_bytes": 23452995,
+  "raw_bytes": 58899880,
+  "brotli_bytes": 25161938,
   "site": "https://xhanetbn.github.io/life-in-a-wasteland-playtest/"
 }
