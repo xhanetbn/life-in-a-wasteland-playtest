@@ -1,22 +1,22 @@
 {
-  "version": "0.7.4",
-  "increment": "I2",
-  "title": "A home worth keeping",
+  "version": "0.7.5",
+  "increment": "I3",
+  "title": "First working lodge",
   "status": "Playable preview",
   "engine": "d43cb6dbd8e8ecd4",
-  "game": "479f461745e979d1",
+  "game": "e1797cb56e57fff3",
   "files": {
     "index.js": "assets/engine-d43cb6dbd8e8ecd4.js",
     "index.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm",
     "index.audio.position.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.position.worklet.js",
     "index.audio.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.worklet.js",
-    "index.pck": "assets/game-479f461745e979d1.pck"
+    "index.pck": "assets/game-e1797cb56e57fff3.pck"
   },
   "packedFiles": {
     "assets/engine-d43cb6dbd8e8ecd4.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm.gz",
-    "assets/game-479f461745e979d1.pck": "assets/game-479f461745e979d1.pck.gz"
+    "assets/game-e1797cb56e57fff3.pck": "assets/game-e1797cb56e57fff3.pck.gz"
   },
-  "raw_bytes": 58899880,
-  "brotli_bytes": 25161938,
+  "raw_bytes": 60921348,
+  "brotli_bytes": 27005032,
   "site": "https://xhanetbn.github.io/life-in-a-wasteland-playtest/"
 }
