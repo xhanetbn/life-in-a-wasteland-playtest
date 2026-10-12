@@ -1,19 +1,19 @@
 {
   "version": "0.7.1",
   "engine": "d43cb6dbd8e8ecd4",
-  "game": "f22f650cf8d2d727",
+  "game": "902cb4a40c3a1813",
   "files": {
     "index.js": "assets/engine-d43cb6dbd8e8ecd4.js",
     "index.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm",
     "index.audio.position.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.position.worklet.js",
     "index.audio.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.worklet.js",
-    "index.pck": "assets/game-f22f650cf8d2d727.pck"
+    "index.pck": "assets/game-902cb4a40c3a1813.pck"
   },
   "packedFiles": {
     "assets/engine-d43cb6dbd8e8ecd4.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm.gz",
-    "assets/game-f22f650cf8d2d727.pck": "assets/game-f22f650cf8d2d727.pck.gz"
+    "assets/game-902cb4a40c3a1813.pck": "assets/game-902cb4a40c3a1813.pck.gz"
   },
-  "raw_bytes": 49071992,
-  "brotli_bytes": 16993180,
+  "raw_bytes": 49072424,
+  "brotli_bytes": 16993873,
   "site": "https://xhanetbn.github.io/life-in-a-wasteland-playtest/"
 }
