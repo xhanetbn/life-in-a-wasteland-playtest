@@ -1,22 +1,22 @@
 {
-  "version": "0.7.5",
-  "increment": "I3",
-  "title": "First working lodge",
+  "version": "0.7.6",
+  "increment": "I4",
+  "title": "Reconnect the road",
   "status": "Playable preview",
   "engine": "d43cb6dbd8e8ecd4",
-  "game": "e1797cb56e57fff3",
+  "game": "99d23b9c0feac3b2",
   "files": {
     "index.js": "assets/engine-d43cb6dbd8e8ecd4.js",
     "index.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm",
     "index.audio.position.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.position.worklet.js",
     "index.audio.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.worklet.js",
-    "index.pck": "assets/game-e1797cb56e57fff3.pck"
+    "index.pck": "assets/game-99d23b9c0feac3b2.pck"
   },
   "packedFiles": {
     "assets/engine-d43cb6dbd8e8ecd4.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm.gz",
-    "assets/game-e1797cb56e57fff3.pck": "assets/game-e1797cb56e57fff3.pck.gz"
+    "assets/game-99d23b9c0feac3b2.pck": "assets/game-99d23b9c0feac3b2.pck.gz"
   },
-  "raw_bytes": 60921348,
-  "brotli_bytes": 27005032,
+  "raw_bytes": 62869988,
+  "brotli_bytes": 28736389,
   "site": "https://xhanetbn.github.io/life-in-a-wasteland-playtest/"
 }
