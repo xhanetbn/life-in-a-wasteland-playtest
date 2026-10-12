@@ -14,8 +14,23 @@
 <noscript>This game needs JavaScript. Enable it for this page, then reload. Your existing save stays on this device.</noscript>
 <script>
 (()=>{'use strict';
- const config = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"assets/engine-d43cb6dbd8e8ecd4","experimentalVK":false,"fileSizes":{"assets/game-02627be8a5246d6a.pck":9266752,"assets/engine-d43cb6dbd8e8ecd4.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"mainPack":"assets/game-02627be8a5246d6a.pck"};
+ const config = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"assets/engine-d43cb6dbd8e8ecd4","experimentalVK":false,"fileSizes":{"assets/game-652e2fa743f9b3b7.pck":9267008,"assets/engine-d43cb6dbd8e8ecd4.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"mainPack":"assets/game-652e2fa743f9b3b7.pck","packedFiles":{"assets/engine-d43cb6dbd8e8ecd4.wasm":"assets/engine-d43cb6dbd8e8ecd4.wasm.gz","assets/game-652e2fa743f9b3b7.pck":"assets/game-652e2fa743f9b3b7.pck.gz"}};
  const scriptURL = 'assets/engine-d43cb6dbd8e8ecd4.js';
+ // Binary gzip URLs make transfer size predictable even on static hosts that
+ // don't negotiate compression for wasm. Older browsers use the raw fallback.
+ const packed = config.packedFiles || {};
+ if(typeof DecompressionStream==='function'){
+  const networkFetch=window.fetch.bind(window);
+  window.fetch=async(input,options)=>{
+   const url=new URL(input instanceof Request?input.url:String(input),document.baseURI).href;
+   const key=Object.keys(packed).find(k=>new URL(k,document.baseURI).href===url);
+   if(!key || (options?.method && options.method!=='GET'))return networkFetch(input,options);
+   let response;try{response=await networkFetch(new URL(packed[key],document.baseURI),options)}catch(_){return networkFetch(input,options)}
+   if(!response.ok)return networkFetch(input,options);
+   const headers=new Headers(response.headers);headers.delete('Content-Encoding');headers.delete('Content-Length');headers.set('Content-Type',key.endsWith('.wasm')?'application/wasm':'application/octet-stream');
+   return new Response(response.body.pipeThrough(new DecompressionStream('gzip')),{status:response.status,headers});
+  };
+ }
  const qa=new URLSearchParams(location.search).get('qa')==='1';
  const canvas=document.getElementById('canvas'),load=document.getElementById('load'),card=document.getElementById('card'),heading=document.getElementById('heading'),message=document.getElementById('message'),progress=document.getElementById('progress');
  let started=false,failed=false,lastProgress=Date.now();
