@@ -1,22 +1,22 @@
 {
-  "version": "0.7.7",
-  "increment": "I5",
-  "title": "A useful household",
-  "status": "Playable preview",
+  "version": "0.7.8",
+  "increment": "I6",
+  "title": "An estate worth earning",
+  "status": "Candidate preview",
   "engine": "d43cb6dbd8e8ecd4",
-  "game": "89db79f9b45f4fd4",
+  "game": "0d05546916d6d0e4",
   "files": {
     "index.js": "assets/engine-d43cb6dbd8e8ecd4.js",
     "index.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm",
     "index.audio.position.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.position.worklet.js",
     "index.audio.worklet.js": "assets/engine-d43cb6dbd8e8ecd4.audio.worklet.js",
-    "index.pck": "assets/game-89db79f9b45f4fd4.pck"
+    "index.pck": "assets/game-0d05546916d6d0e4.pck"
   },
   "packedFiles": {
     "assets/engine-d43cb6dbd8e8ecd4.wasm": "assets/engine-d43cb6dbd8e8ecd4.wasm.gz",
-    "assets/game-89db79f9b45f4fd4.pck": "assets/game-89db79f9b45f4fd4.pck.gz"
+    "assets/game-0d05546916d6d0e4.pck": "assets/game-0d05546916d6d0e4.pck.gz"
   },
-  "raw_bytes": 68852164,
-  "brotli_bytes": 33948240,
+  "raw_bytes": 74755084,
+  "brotli_bytes": 39240399,
   "site": "https://xhanetbn.github.io/life-in-a-wasteland-playtest/"
 }
